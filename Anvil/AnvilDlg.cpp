@@ -570,6 +570,7 @@ void CAnvilDlg::OnBnClickedBtCaculForgePoint()
 		}
 		csCoordinate.Format(_T("%d"), iForgePoint);
 		GetDlgItem(IDC_ET_COORDINATE)->SetWindowText(csCoordinate);
+		GetDlgItem(IDC_ET_TARGET)->SetWindowText(csCoordinate);
 
 
 }
