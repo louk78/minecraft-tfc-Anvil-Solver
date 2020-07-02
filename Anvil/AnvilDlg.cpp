@@ -471,17 +471,17 @@ void CAnvilDlg::OnBnClickedBtCalculate()
 			actioncout = CalculateNeedAction(iRemainer);
 			if (actioncout.bCan)
 			{
-				csResult.Format(_T("%dShrink"), iMul);
+				csResult.Format(_T("%dShrink "), iMul);
 				csTemp = "";
 				if (actioncout.iThirteenCount != 0)
 				{
-					csTemp.Format(_T("%dUpset"), actioncout.iThirteenCount);
+					csTemp.Format(_T("%dUpset "), actioncout.iThirteenCount);
 					csResult += csTemp;
 					csTemp = "";
 				}
 				if (actioncout.iSevenCount != 0)
 				{
-					csTemp.Format(_T("%dBend"), actioncout.iSevenCount);
+					csTemp.Format(_T("%dBend "), actioncout.iSevenCount);
 					csResult += csTemp;
 					csTemp = "";
 				}
